@@ -2,7 +2,7 @@ import React from 'react';
 import "../style/_app.scss"
 function Test() {
   return (
-    <div className="test">
+    <div className="Test">
         <figure className="bg-gray-100 rounded-xl p-8">
             <img className="w-32 h-32 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512" />
             <div className="pt-6 space-y-4">
