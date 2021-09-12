@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React + Tailwind + Webpack + SASS
+安裝環境是最麻煩的
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+這是一個使用 create-react-app 打造的乾淨專案
 
-## Available Scripts
+使用的 package 版本都是目前最新的 所以不需要擔心 (目前日期 2021 09 12)
+## Uasge
 
-In the project directory, you can run:
+#### `npm start` 
+透過 `webpack-dev-server` 運行，可在瀏覽器上輸入 [http://localhost:3000](http://localhost:3000) 瀏覽專案。
 
-### `npm start`
+## npm script
+在 `package.json` 裡面有三個 npm script
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm start`
+用 webpack-dev-server 在瀏覽器開啟專案，詳情請看 config/webpack.dev.js
+- `npm run build`
+壓縮打包 詳情請看 config/webpack.prod.js
+- `npm run pack`
+輕量化打包 詳情請看 config/webpack.dev.js
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Package
+* "@babel/core" : babel 核心
+* "@babel/preset-env" : es6^ 轉換器
+* "@babel/preset-react" : react 轉換器
+* "autoprefixer" : 供應商前綴處理器
+* "babel-loader" : webpack - babel loader
+* "clean-webpack-plugin" : 清理上一次打包完的檔案 
+* "css-loader" : webpack - css loader
+* "css-minimizer-webpack-plugin" : css 打包最小化
+* "html-webpack-plugin" : 打包時自動生成 html ，包含 css js 匯入
+* "mini-css-extract-plugin" : 打包時匯出 css 成單一檔案
+* "node-sass" : sass 
+* "postcss" : tailwind 前置
+* "postcss-import" : 這要幹嘛我有點忘了 反正重要
+* "postcss-loader" : webpack - postcss loader
+* "sass-loader" : webpack - sass loader
+* "style-loader" : webpack - css loader
+* "terser-webpack-plugin" : 最小化 js
+* "webpack" : 打包工具 
+* "webpack-cli" : 打包工具的指令
+* "webpack-dev-server" : 運行專案
+* "webpack-merge" : 結合不同的 webpack config
