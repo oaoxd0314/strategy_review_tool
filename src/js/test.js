@@ -1,5 +1,4 @@
 import React from 'react';
-import "../style/_app.scss"
 function Test() {
   return (
     <div className="Test">

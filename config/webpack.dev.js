@@ -7,6 +7,6 @@ module.exports = merge(main, {
     devtool: 'inline-source-map',
     devServer: {
       static:path.resolve(__dirname, '../dist'),
-      port: 3000,
+      port: 8000,
   },
 })

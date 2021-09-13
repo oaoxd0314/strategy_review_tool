@@ -24,10 +24,8 @@ module.exports = {
                     } 
                 } 
             },{
-                test: /\.(css|scss|sass)$/,
-                use: [MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader',
+                test: /\.(css|s[ac]ss)$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader',
                     {
                       loader: 'postcss-loader',
                       options: {
